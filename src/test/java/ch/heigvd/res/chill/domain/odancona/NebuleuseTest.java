@@ -22,7 +22,7 @@ class NebuleuseTest {
   @Test
   void aBartenderShouldAcceptAnOrderForNebuleuse() {
     Bartender jane = new Bartender();
-    String productName = "ch.heigvd.res.chill.domain.wasadigi.Nebuleuse";
+    String productName = "ch.heigvd.res.chill.domain.odancona.Nebuleuse";
     OrderRequest request = new OrderRequest(3, productName);
     OrderResponse response = jane.order(request);
     BigDecimal expectedTotalPrice = Nebuleuse.PRICE.multiply(new BigDecimal(3));
